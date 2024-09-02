@@ -1,0 +1,33 @@
+.container_imagem{
+    width: 100%;
+    max-width: 60%;
+    height: auto;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width:430px) {
+    .container_imagem{
+        margin-left: 0px;
+        max-width: 430px;
+    }
+}
+
+.content_imagem{
+    width: auto;
+    height: auto;
+    border-radius: 30px;
+    outline: 5px solid rgb(53, 53, 53);
+    margin-top: 40px;
+}
+
+.content_imagem:nth-child(odd){
+    align-self: flex-start;
+    margin-left: 30px;
+}
+
+.content_imagem:nth-child(even){
+    align-self: flex-end;
+    margin-right: 30px;
+}
